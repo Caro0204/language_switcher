@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Switcher</title>
+    <script type="module" src="js.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Babylonica&family=Corinthia:wght@400;700&family=Cutive+Mono&family=Ephesis&family=Inconsolata&family=Kalam&family=Montserrat:wght@600&family=Open+Sans&family=Orbitron&family=Permanent+Marker&family=Rajdhani&family=Rye&family=Sora&family=Sriracha&family=Tulpen+One&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="flex">
+        <header class="header">SPROG</header>
+        <label>
+            Vælg et sprog:
+            <select class="sprog" name="sprog">
+                <option value="">...</option>
+                <option value="da">Dansk</option>
+                <option value="de">Tysk</option>
+            </select>
+        </label>
+    </div>
+    <p>Content: <br> <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita culpa, incidunt excepturi in
+        repellendus libero fuga nobis provident deserunt quam voluptatum possimus natus atque minima. Nostrum delectus
+        pariatur mollitia libero.
+    </p>
+    <div class="footer">SPROG</div>
+
+
+    <div class="result"></div>
+</body>
+
+</html>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        max-width: 1200px;
+        margin: 0 auto;
+        background-color: antiquewhite;
+    }
+
+    .flex {
+        display: flex;
+        justify-content: space-between;
+        background-color: rgb(86, 86, 141);
+    }
+
+    p {
+        padding: 40px;
+        background-color: white;
+        color: rgb(124, 124, 124);
+        font-family: 'Montserrat', sans-serif;
+
+    }
+
+    label {
+        margin-top: 100px;
+        padding-right: 35px;
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    header {
+
+        padding: 40px;
+        color: white;
+        padding-bottom: 2px;
+    }
+
+    .footer {
+        background-color: lightskyblue;
+        padding: 40px;
+        color: white;
+        font-size: 3rem;
+        padding-bottom: 20px;
+    }
+
+    .header {
+        font-size: 5rem;
+    }
+
+    .header,
+    .footer {
+        font-family: 'Montserrat', sans-serif;
+
+    }
+</style>
